@@ -8,6 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      height: {
+        "86": "5.375rem",
+      },
+      screens: {
+        tablet: "640px",
+        // => @media (min-width: 640px) { ... }
+
+        laptop: "1024px",
+        // => @media (min-width: 1024px) { ... }
+
+        desktop: "1280px",
+        // => @media (min-width: 1280px) { ... }
+      },
+      borderRadius: {
+        custom: "2.78px",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -15,6 +31,17 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        united4digital: {
+          primary: "#151F4F",
+          secondary: "#FF6839",
+          "base-100": "F2F2F2",
+        },
+      },
+    ],
+  },
 };
 export default config;
