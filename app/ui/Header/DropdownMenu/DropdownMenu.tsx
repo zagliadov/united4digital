@@ -46,11 +46,11 @@ export const DropdownMenu: FC = () => {
         animate={isOpen ? "open" : "closed"}
         variants={dropdownVariants}
       >
-        <ul className="flex flex-col py-4 px-14 border-t-4 border-t-primary rounded-b-md w-3/5 bg-base-100">
+        <ul className="flex flex-col py-4 px-14 border-t-4 border-t-primary w-4/5 rounded-b-md bg-base-100">
           {_.map(links, (link) => {
             return (
               <Link key={link.name} href={link.href}>
-                <li className="py-4 text-center leading-4">{link.name}</li>
+                <li className="py-4 text-center text-2xl leading-6">{link.name}</li>
               </Link>
             );
           })}

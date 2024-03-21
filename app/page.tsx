@@ -1,14 +1,15 @@
-
-import Footer from "./ui/Footer/Footer";
-import Header from "./ui/Header/Header";
+import Footer from "@/app/ui/Footer/Footer";
+import Header from "@/app/ui/Header/Header";
+import PresentSection from "@/app/ui/sections/PresentSection";
+import AboutUsSection from "@/app/ui/sections/AboutUsSection";
 
 export default function Home() {
-
   return (
     <>
       <Header />
-      <main className="flex-grow relative bg-slate-600">
-        
+      <main className="flex-grow">
+        <PresentSection />
+        <AboutUsSection />
       </main>
       <Footer />
     </>

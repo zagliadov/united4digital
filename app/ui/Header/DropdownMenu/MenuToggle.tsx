@@ -1,10 +1,16 @@
 "use client";
 
 import { FC } from "react";
-import { motion } from "framer-motion";
-import { Button } from "../../Button/Button";
+import { motion, Variants } from "framer-motion";
 
-const Path = (props: any) => (
+interface PathProps {
+  variants: Variants;
+  d?: string;
+  opacity?: number;
+  transition?: { duration: number };
+}
+
+const Path: FC<PathProps> = (props: any) => (
   <motion.path
     fill="transparent"
     strokeWidth="3"
