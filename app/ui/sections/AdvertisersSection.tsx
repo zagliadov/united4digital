@@ -86,18 +86,6 @@ export default function AdvertisersSection() {
       </Container>
       <Container>
         <GeneralSchemeOfWork />
-        {/* <div className="flex flex-col items-center pt-24">
-          <h3 className="text-3xl font-bold text-center text-primary pb-16">
-            General scheme of work
-          </h3>
-          <Image
-            alt="General scheme of work img"
-            src="/buy-sell.svg"
-            width={0}
-            height={0}
-            className="w-auto h-auto"
-          />
-        </div> */}
       </Container>
       <Container>
         <div className="flex laptop:justify-between flex-col items-center laptop:flex-row-reverse pt-28">

@@ -2,6 +2,7 @@
 
 import { useRouter } from 'next/navigation'
 import { ButtonHTMLAttributes, FC, ReactNode } from "react";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   label?: string;
@@ -19,6 +20,7 @@ export const Button: FC<IProps> = ({
   const router = useRouter();
   const handleClick = () => {
     if (type === "button") {
+      sendGTMEvent({ event: "type button", value: "contact us" });
       router.push("/#contact-us");
     }
   };
