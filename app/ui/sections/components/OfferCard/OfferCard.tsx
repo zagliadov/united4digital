@@ -9,7 +9,7 @@ interface IProps {
 export default function OfferCard({ src, alt, text, className }: IProps) {
   return (
     <div className={`bg-white py-8 px-10 rounded-lg ${className}`}>
-      <Image src={src} width={56} height={50} alt={alt} />
+      <Image src={src} width={0} height={0} alt={alt} className="w-auto h-auto"/>
       <p className="pt-10">{text}</p>
     </div>
   );

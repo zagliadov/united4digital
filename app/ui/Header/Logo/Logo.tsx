@@ -6,9 +6,10 @@ export default function Logo() {
     <Link href="/">
       <Image
         src="/logo.svg"
-        width={60}
-        height={46}
+        width={0}
+        height={0}
         alt="Logo United for Digital"
+        className="w-auto h-auto"
       />
     </Link>
   );

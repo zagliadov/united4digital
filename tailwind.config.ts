@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        gray: {
+          50: "#404970",
+          100: "#E8E9ED",
+        },
+      },
       height: {
         "86": "5.375rem",
       },

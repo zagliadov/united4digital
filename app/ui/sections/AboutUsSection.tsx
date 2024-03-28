@@ -1,12 +1,11 @@
 import Image from "next/image";
 import * as _ from "lodash";
 import OfferCard from "@/app/ui/sections/components/OfferCard/OfferCard";
+import SectionHeading from "@/app/ui/sections/components/Heading/SectionHeading";
+import Container from "@/app/ui/Container/Container";
+import SectionWrapper from "@/app/ui/SectionWrapper/SectionWrapper";
+import { IOfferList } from "@/app/types/definitions";
 
-interface IOfferList {
-  src: string;
-  alt: string;
-  text: string;
-}
 const offerList: IOfferList[] = [
   {
     src: "/offerIconOne.svg",
@@ -39,19 +38,22 @@ const offerList: IOfferList[] = [
 ];
 export default function AboutUsSection() {
   return (
-    <section className="h-auto px-4 tablet:py-24">
-        <div className="tablet:flex tablet:items-center tablet:container tablet:mx-auto tablet:justify-between">
-          <div className="text-primary">
-            <h2 className="text-center text-4xl font-bold py-4 tablet:text-start tablet:pb-16">About us</h2>
-            <h3 className="text-center text-3xl font-bold py-4 tablet:text-start tablet:pb-8 tablet:pt-0">
+    <SectionWrapper id="about-us" className="bg-base-100">
+      <Container>
+        <SectionHeading text={"About us"} />
+      </Container>
+      <Container>
+        <div className="flex flex-col laptop:flex-row items-center laptop:justify-between">
+          <div className="text-primary max-w-[500px] pb-8 pt-28 laptop:pt-0 laptop:pb-0">
+            <h3 className="text-3xl font-bold pb-8">
               The company&apos;s mission
             </h3>
-            <p className="text-center text-lg py-7 tablet:text-start tablet:max-w-[500px] tablet:py-0">
+            <p className="text-lg pb-7">
               United4Digital is aimed to offer wide range solutions designed to
               businesses to maximize the revenue potential by means of variety
               of digital ads.
             </p>
-            <p className="text-center text-lg py-7 tablet:text-start tablet:max-w-[500px]">
+            <p className="text-lg">
               United4Digital is dedicated to empowering businesses with a wide
               range of digital advertising solutions aimed at optimizing revenue
               potential.
@@ -60,24 +62,29 @@ export default function AboutUsSection() {
           <div>
             <Image
               src="/rectangle.svg"
-              width={730}
-              height={459}
+              width={0}
+              height={0}
               alt="rectangle image"
+              className="w-auto h-auto"
             />
           </div>
         </div>
-        <div className="tablet:pt-20 py-10 tablet:flex tablet:container tablet:mx-auto">
+      </Container>
+      <Container>
+        <div className="laptop:pt-20 pt-10 laptop:flex">
           {_.map(offerList, ({ src, alt, text }: IOfferList, index: number) => {
             return (
               <OfferCard
+                key={alt}
                 src={src}
                 alt={alt}
                 text={text}
-                className={`${index && "mt-6 tablet:mt-0 tablet:ml-6"}`}
+                className={`${index && "mt-6 laptop:mt-0 laptop:ml-6"}`}
               />
             );
           })}
         </div>
-    </section>
+      </Container>
+    </SectionWrapper>
   );
 }
