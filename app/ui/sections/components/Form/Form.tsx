@@ -185,7 +185,6 @@ export default function Form() {
               fill={"var(--color-primary)"}
               className="hover:bg-gray-100"
             />
-            <LinkedIn />
           </div>
         </div>
       </form>
