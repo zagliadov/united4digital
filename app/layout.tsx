@@ -25,7 +25,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* GTM-TTC44B3J */}
       <GoogleTagManager gtmId="GTM-TTC44B3J" />
       <GoogleAnalytics gaId="G-M0HCH2F1PG" />
       <Analytics/>

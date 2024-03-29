@@ -62,8 +62,8 @@ export default function AboutUsSection() {
           <div>
             <Image
               src="/rectangle.svg"
-              width={0}
-              height={0}
+              width={730}
+              height={460}
               alt="rectangle image"
               className="w-auto h-auto"
             />
