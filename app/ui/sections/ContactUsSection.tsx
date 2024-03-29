@@ -17,8 +17,8 @@ export default function ContactUsSection() {
             <Image
               alt="Rectangle"
               src="/rectangle.svg"
-              width={0}
-              height={0}
+              width={734}
+              height={572}
               className="w-auto h-auto"
             />
           </div>

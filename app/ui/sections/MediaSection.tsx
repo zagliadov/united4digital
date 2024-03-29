@@ -31,8 +31,8 @@ export default function MediaSection() {
           <div>
             <Image
               src="/your-adv.gif"
-              width={0}
-              height={0}
+              width={833}
+              height={406}
               alt="Customized programmatic media buying to effectively position your ads for optimal user acquisition, leveraging deep expertise and strategic relationships."
               className="w-auto h-auto"
             />
@@ -66,8 +66,8 @@ export default function MediaSection() {
             <Image
               alt="Rectangle"
               src="/rectangle.svg"
-              width={0}
-              height={0}
+              width={730}
+              height={460}
               className="w-auto h-auto"
             />
           </div>

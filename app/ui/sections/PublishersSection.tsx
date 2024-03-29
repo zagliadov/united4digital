@@ -80,8 +80,8 @@ export default function PublishersSection() {
             <Image
               alt="Rectangle"
               src="/rectangle.svg"
-              width={0}
-              height={0}
+              width={730}
+              height={460}
               className="w-auto h-auto"
             />
           </div>

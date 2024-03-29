@@ -58,8 +58,8 @@ export default function AdvertisersSection() {
             <Image
               alt="demonstrates based on your desired level of control and target CPM preferences."
               src="/advertisers-anim.gif"
-              width={0}
-              height={0}
+              width={894}
+              height={431}
               className="w-auto h-auto"
               priority
             />
@@ -93,8 +93,8 @@ export default function AdvertisersSection() {
             <Image
               alt="Rectangle"
               src="/rectangle.svg"
-              width={0}
-              height={0}
+              width={730}
+              height={463}
               className="w-auto h-auto"
             />
           </div>

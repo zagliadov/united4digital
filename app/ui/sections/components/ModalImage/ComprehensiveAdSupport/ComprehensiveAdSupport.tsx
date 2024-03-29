@@ -15,8 +15,8 @@ export default function ComprehensiveAdSupport() {
       <Image
         alt="Illustration of comprehensive advertising campaign support"
         src="/comprehensive-ad-support.svg"
-        width={0}
-        height={0}
+        width={968}
+        height={490}
         className="w-auto h-auto cursor-zoom-in"
         onClick={handleClick}
       />

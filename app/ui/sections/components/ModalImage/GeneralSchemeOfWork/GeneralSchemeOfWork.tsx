@@ -19,8 +19,8 @@ export default function GeneralSchemeOfWork() {
         <Image
           alt="General scheme of work img"
           src="/buy-sell.svg"
-          width={0}
-          height={0}
+          width={1402}
+          height={490}
           className="w-auto h-auto cursor-zoom-in"
           onClick={handleClick}
         />
