@@ -8,7 +8,6 @@ function BoldText({ children, className }: IProps) {
   return <span className={`font-bold ${className}`}>{children}</span>;
 }
 
-// NormalText.jsx
 function NormalText({ children, className }: IProps) {
   return <span className={`font-normal ${className}`}>{children}</span>;
 }

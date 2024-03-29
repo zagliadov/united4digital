@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { openSans } from "@/app/ui/fonts";
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import "./globals.css";
 
 import CookiesConsent from "./ui/CookieConsent/CookieConsent";
@@ -24,7 +24,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* GTM-TTC44B3J */}
-      <GoogleTagManager gtmId="G-M0HCH2F1PG" /> 
+      <GoogleTagManager gtmId="GTM-TTC44B3J" /> 
+      <GoogleAnalytics gaId="G-M0HCH2F1PG" />
       <body
         className={`${openSans.variable} flex flex-col min-h-screen antialiased`}
       >
