@@ -23,7 +23,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="GTM-TTC44B3J" />
+      {/* GTM-TTC44B3J */}
+      <GoogleTagManager gtmId="G-M0HCH2F1PG" /> 
       <body
         className={`${openSans.variable} flex flex-col min-h-screen antialiased`}
       >
