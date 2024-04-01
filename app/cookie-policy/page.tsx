@@ -6,7 +6,7 @@ import { BoldText, NormalText } from "@/app/ui/LegalComponents/Text/Text";
 
 export default function CookiePolicy() {
   return (
-    <Container className="px-4 laptop:px-[200px] text-justify">
+    <Container className="px-4 laptop:px-[200px] text-justify text-lg">
       <Heading>Cookie Policy</Heading>
       <Paragraph>Last updated: April 1, 2024</Paragraph>
       <Paragraph className="pt-4">
@@ -363,14 +363,280 @@ export default function CookiePolicy() {
         <li>
           <BoldText>Cookie&apos;s denomination: </BoldText>
           <NormalText>Facebook</NormalText>
-          <ul className="list-disc list-inside">
+          <ul className="list-disc list-inside pl-5">
             <li>
               <BoldText>Cookie&apos;s category: </BoldText>
               <NormalText>Third-party profiling cookie lasting</NormalText>
             </li>
+            <li>
+              <BoldText>Link to the policy: </BoldText>
+              <NormalText>
+                <Link
+                  href="https://www.youronlinechoices.com/uk/"
+                  className="text-sky-500 underline"
+                >
+                  Your Online Choices - Facebook
+                </Link>
+              </NormalText>
+            </li>
           </ul>
         </li>
+        <li>
+          <BoldText>Cookie&apos;s denomination: </BoldText>
+          <NormalText>Linkedin</NormalText>
+        </li>
+        <ul className="list-disc list-inside pl-5">
+          <li>
+            <BoldText>Informative links: </BoldText>
+            <NormalText>
+              <Link
+                href="https://ru.linkedin.com/legal/cookie-policy?"
+                className="text-sky-500 underline"
+              >
+                Linkedin Cookie Policy
+              </Link>
+            </NormalText>
+          </li>
+        </ul>
       </ul>
+      <Paragraph className="pt-6">
+        <BoldText>E. How to Manage Cookies and Opt-out of Their Use</BoldText>
+      </Paragraph>
+      <Paragraph className="pt-4">
+        There are several options available to manage, disable, and remove
+        cookies:
+      </Paragraph>
+      <ul className="list-decimal list-inside pt-4">
+        <li>
+          Modify your browser settings: Please follow the instructions provided
+          by your browser&apos;s manufacturer to discover how to manage,
+          disable, or remove all types of cookies (technical, analytics, and
+          profiling):
+        </li>
+      </ul>
+      <ul className="list-disc list-inside pl-5 pt-4">
+        <li>
+          <NormalText>
+            Explorer:{" "}
+            <Link
+              href="https://support.microsoft.com/en-gb/windows/delete-and-manage-cookies-168dab11-0753-043d-7c16-ede5947fc64d"
+              className="text-sky-500 underline"
+            >
+              Manage cookies in Microsoft Edge
+            </Link>
+          </NormalText>
+        </li>
+        <li>
+          <NormalText>
+            Chrome:{" "}
+            <Link
+              href="https://support.google.com/chrome/answer/95647?hl=en"
+              className="text-sky-500 underline"
+            >
+              Manage cookies in Google Chrome
+            </Link>
+          </NormalText>
+        </li>
+        <li>
+          <NormalText>
+            Firefox:{" "}
+            <Link
+              href="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop?redirectslug=enable-and-disable-cookies-website-preferences&redirectlocale=en-US"
+              className="text-sky-500 underline"
+            >
+              Manage cookies in Mozilla Firefox
+            </Link>
+          </NormalText>
+        </li>
+        <li>
+          <NormalText>
+            Safari:{" "}
+            <Link
+              href="https://support.apple.com/en-gb/guide/safari/sfri11471/mac"
+              className="text-sky-500 underline"
+            >
+              Manage cookies in Safari
+            </Link>
+          </NormalText>
+        </li>
+        <li>
+          <NormalText>
+            Opera:{" "}
+            <Link
+              href="https://help.opera.com/en/latest/web-preferences/"
+              className="text-sky-500 underline"
+            >
+              Manage cookies in Opera
+            </Link>
+          </NormalText>
+        </li>
+        <li>
+          <NormalText>
+            Edge:{" "}
+            <Link
+              href="https://support.microsoft.com/en-us/windows/microsoft-edge-browsing-data-and-privacy-bb8174ba-9d73-dcf2-9b4a-c582b4e640dd"
+              className="text-sky-500 underline"
+            >
+              Manage cookies in Microsoft Edge
+            </Link>
+          </NormalText>
+        </li>
+      </ul>
+      <Paragraph className="pt-6">
+        <BoldText>F. Processing Methods and Data Retention Timing</BoldText>
+      </Paragraph>
+      <Paragraph className="pt-4">
+        As outlined in the preamble of this Cookie Policy, the Company collects
+        and processes certain personal data through cookies directly conveyed on
+        the Website (first-party cookies). The Company acts as the data
+        controller of such data, in accordance with the provisions of the GDPR.
+      </Paragraph>
+      <Paragraph className="pt-4">
+        Please note that we will process your data solely using electronic
+        instruments, in a highly automated manner, without any human
+        intermediation. Therefore, our employees and collaborators will never
+        access the content of your personal data obtained through cookies. This
+        means that they will never be able to view and/or access any Personally
+        Identifiable Information (PII) directly.
+      </Paragraph>
+      <Paragraph className="pt-4">
+        Certain employees and coworkers, designated by us as data controllers,
+        may perform maintenance operations on IT systems hosting your data,
+        without accessing their actual contents. Your personal data may be
+        stored on servers managed by third parties (such as IT system providers)
+        or may be handled by specialized online marketing entities acting as
+        external data controllers based on specific written appointments by the
+        Company.
+      </Paragraph>
+      <Paragraph className="pt-4">
+        We hereby inform you that, in compliance with legal requirements and
+        guarantees, your data may be transferred to countries outside the
+        European Economic Union that may not provide a level of privacy and
+        personal data protection equivalent to that guaranteed by Italian and
+        European privacy laws. However, as the Controller, we prioritize
+        security and will ensure that such transfers are conducted with all due
+        care and guarantees.
+      </Paragraph>
+      <Paragraph className="pt-4">
+        Your personal data will not be transferred to third-party data
+        processors or disseminated to unauthorized parties.
+      </Paragraph>
+      <Paragraph className="pt-6">
+        <BoldText>G. Your Rights</BoldText>
+      </Paragraph>
+      <Paragraph className="pt-4">
+        To exercise your rights or to obtain any other information or
+        clarification regarding this Cookie Policy, please contact the Company
+        via email at contact@united4digital.com.
+      </Paragraph>
+      <Paragraph className="pt-4">
+        In accordance with Privacy Laws, the Data Controller informs that
+        Consumers have the right to obtain:
+      </Paragraph>
+      <ul className="list-decimal list-inside pt-6">
+        <li>
+          <NormalText>Indication of the origin of personal data.</NormalText>
+        </li>
+        <li>
+          <NormalText>
+            Information about the purposes and methods of processing.
+          </NormalText>
+        </li>
+        <li>
+          <NormalText>
+            Explanation of the logic applied in electronic processing.
+          </NormalText>
+        </li>
+        <li>
+          <NormalText>
+            Identification details of the Controllers and Processors.
+          </NormalText>
+        </li>
+        <li>
+          <NormalText>
+            Information about the subjects or categories of subjects to whom the
+            personal data may be communicated or who may come to know them as
+            Processors.
+          </NormalText>
+        </li>
+      </ul>
+      <Paragraph className="pt-4">
+        Furthermore, Consumers have the right to:
+      </Paragraph>
+      <ul className="list-decimal list-inside pt-4">
+        <li>
+          <NormalText>Access, update, rectify, or integrate data.</NormalText>
+        </li>
+        <li>
+          <NormalText>
+            Request the deletion, transformation into anonymous form, or
+            blocking of unlawfully processed data, including data whose
+            retention is unnecessary for the purposes for which the data were
+            collected or subsequently processed.
+          </NormalText>
+        </li>
+      </ul>
+      <Paragraph className="pt-4">Furthermore, Consumers have:</Paragraph>
+      <ul className="list-decimal list-inside pt-4">
+        <li>
+          <NormalText>
+            The right to withdraw consent at any time, if the processing is
+            based on their consent.
+          </NormalText>
+        </li>
+        <li>
+          <NormalText>
+            (If applicable) The right to data portability (the right to receive
+            all personal data concerning them in a structured format, commonly
+            used, and readable by automatic device), the right to limit the
+            processing of personal data, and the right to erasure (&quot;right
+            to be forgotten&quot;).
+          </NormalText>
+        </li>
+        <li>
+          <NormalText>The right to object:</NormalText>
+          <ul className="list-disc list-inside pl-5">
+            <li>
+              <NormalText>
+                In whole or in part, for legitimate reasons, to the processing
+                of personal data concerning them, even if pertinent to the
+                purpose of the collection.
+              </NormalText>
+            </li>
+            <li>
+              <NormalText>
+                In whole or in part, to the processing of personal data
+                concerning them for the purpose of sending advertising or direct
+                sales material or for carrying out market research or commercial
+                communication.
+              </NormalText>
+            </li>
+            <li>
+              <NormalText>
+                If personal data are processed for direct marketing purposes, at
+                any time, to the processing of your data for this purpose,
+                including profiling insofar as it is connected to such direct
+                marketing.
+              </NormalText>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <NormalText>
+            If they believe that the processing that concerns them violates any
+            Privacy Laws, the right to lodge a complaint with a Supervisory
+            Authority (if a European citizen, in the Member State in which they
+            usually reside, in the one in which they work, or in the one in
+            which the alleged violation has occurred).
+          </NormalText>
+        </li>
+      </ul>
+      <Paragraph className="pt-4 pb-100">
+        The Controller is not responsible for updating all links provided in
+        this Cookie Policy. Therefore, if a link is not functional or updated,
+        Consumers acknowledge and accept that they must always refer to the
+        document and/or section of the websites referred to by such link.
+      </Paragraph>
     </Container>
   );
 }

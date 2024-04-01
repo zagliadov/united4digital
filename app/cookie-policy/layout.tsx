@@ -6,7 +6,10 @@ import Header from "@/app/ui/Header/Header";
 
 export const metadata: Metadata = {
   title: "Cookie Policy",
-  description: "Cookie policy page",
+  robots: {
+    index: false,
+    follow: true
+  }
 };
 
 export default function CookiePolicyLayout({

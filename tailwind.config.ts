@@ -28,7 +28,8 @@ const config: Config = {
         "86": "5.375rem",
       },
       spacing: {
-        '15': '3.75rem', // 60px
+        "15": "3.75rem", // 60px
+        "100": "6.25rem", // 100px
       },
       screens: {
         tablet: "640px",
