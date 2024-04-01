@@ -21,8 +21,8 @@ export const NavLinks: FC = () => {
       <path
         d="M11.7055 11L14.1753 8.53026C14.4682 8.23736 14.4682 7.76248 14.1753 7.46958L11.7055 4.99984M13.9556 7.99992L2.95532 7.99992"
         stroke="white"
-        stroke-width="1.1"
-        stroke-linecap="round"
+        strokeWidth="1.1"
+        strokeLinecap="round"
       />
     </svg>
   );

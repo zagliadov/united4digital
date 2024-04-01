@@ -61,6 +61,7 @@ export default function AdvertisersSection() {
               width={894}
               height={431}
               className="w-auto h-auto"
+              unoptimized={true}
               priority
             />
           </div>

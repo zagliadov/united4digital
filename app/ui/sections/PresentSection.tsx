@@ -10,6 +10,7 @@ export default function PresentSection() {
         alt="We are united to bring the best traffic quality in digital world."
         className="w-auto h-auto"
         priority
+        unoptimized={true}
       />
       <h1 className="laptop:absolute laptop:top-[60%] text-center laptop:text-3xl text-2xl text-white leading-9">
         We are united to bring the best traffic quality in digital world.
