@@ -176,7 +176,7 @@ export default function Form() {
         )}
 
         <div className="flex justify-between pt-8">
-          <Button label={"Submit"} type={"submit"} className="w-[170px]" />
+          <Button label={"Submit"} type={"submit"} className="w-[170px] btn-secondary" />
           <div className="flex items-center">
             <LinkedIn
               fill={"var(--color-primary)"}

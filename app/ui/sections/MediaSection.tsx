@@ -83,7 +83,7 @@ export default function MediaSection() {
               <div className="pt-8">
                 <Button
                   label="Contact us"
-                  className="laptop:px-14 w-full laptop:w-auto"
+                  className="laptop:px-14 w-full laptop:w-auto btn-secondary"
                 />
               </div>
             </div>

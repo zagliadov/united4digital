@@ -38,7 +38,7 @@ export const NavLinks: FC = () => {
           );
         })}
       </ul>
-      <Button label="Contact us" className="px-5" icon={arrow} />
+      <Button label="Contact us" className="px-5 btn-secondary" icon={arrow} />
     </div>
   );
 };

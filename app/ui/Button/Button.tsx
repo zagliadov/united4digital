@@ -29,7 +29,7 @@ export const Button: FC<IProps> = ({
     <button
       type={type}
       onClick={handleClick}
-      className={`btn btn-secondary text-base-100 leading-4 font-bold ${className}`}
+      className={`btn text-base-100 leading-4 font-bold ${className}`}
       {...props}
     >
       {label && <span className="label-container">{label}</span>}

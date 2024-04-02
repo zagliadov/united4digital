@@ -14,7 +14,7 @@ export default function NotFound() {
           className="w-auto h-auto"
         />
         <div className="hidden laptop:flex">
-          <Button label={"Contact us"} />
+          <Button label={"Contact us"} className="btn-secondary"/>
         </div>
       </div>
       <div className="flex flex-col h-full justify-end items-center px-2 laptop:justify-center">

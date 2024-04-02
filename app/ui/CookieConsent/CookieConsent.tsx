@@ -15,6 +15,10 @@ export default function CookiesConsent() {
     setShowConsent(true);
     setCookie("localConsent", "true", {});
   };
+  const declineCookie = () => {
+    setShowConsent(true)
+    setCookie("localConsent", "false", {});
+  }
 
   if (showConsent) {
     return null;
@@ -26,8 +30,15 @@ export default function CookiesConsent() {
         <span className="px-4 py-6">
           This website uses cookies to improve user experience. By using our
           website you consent to all the Terms of Usage in accordance with our{" "}
-          <Link href="/privacy-policy" className="text-primary font-semibold">Privacy Policy.</Link>
+          <Link href="/privacy-policy" className="text-primary font-semibold">
+            Privacy Policy.
+          </Link>
         </span>
+        <Button
+          label={"Decline"}
+          onClick={declineCookie}
+          className="text-white leading-4 font-bold mr-4 bg-base-300"
+        />
         <Button
           label={"Accept"}
           onClick={acceptCookie}
