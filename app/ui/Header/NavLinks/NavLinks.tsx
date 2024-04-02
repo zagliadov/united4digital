@@ -31,8 +31,9 @@ export const NavLinks: FC = () => {
       <ul className="navbar-end text-base-100 w-full hidden laptop:flex">
         {_.map(links, (link) => {
           return (
-            <Link key={link.name} href={`/#${link.href}`}>
-              <li className="mr-4 h-full flex items-center">{link.name}</li>
+            <Link key={link.name} href={`/#${link.href}`} className="flex items-center justify-center w-[130px]">
+              {/* mr-4 */}
+              <li className=" h-full flex items-center hover:text-white hover:font-bold text-base">{link.name}</li>
             </Link>
           );
         })}
