@@ -55,7 +55,7 @@ export default function Form() {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="laptop:flex laptop:justify-between">
           {/* *** First Name *** */}
-          <label className="form-control w-full laptop:max-w-[300px]">
+          <label className="form-control w-full laptop:max-w-[300px] tablet:mr-4">
             <div className="label">
               <span className="font-medium">
                 First Name<span className="text-error">*</span>
@@ -94,7 +94,7 @@ export default function Form() {
 
         <div className="laptop:flex laptop:justify-between">
           {/* *** Email *** */}
-          <label className="form-control w-full laptop:max-w-[300px]">
+          <label className="form-control w-full laptop:max-w-[300px] tablet:mr-4">
             <div className="label">
               <span className="font-medium">
                 Email<span className="text-error">*</span>

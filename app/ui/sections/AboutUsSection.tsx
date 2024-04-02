@@ -40,44 +40,49 @@ const offerList: IOfferList[] = [
 export default function AboutUsSection() {
   return (
     <SectionWrapper id="about-us" className="bg-base-100">
-      <Container>
-        <SectionHeading text={"About us"} />
-      </Container>
-      <Container>
-        <div className="flex flex-col laptop:flex-row items-center laptop:justify-between">
-          <div className="text-primary max-w-[500px] pb-8 pt-28 laptop:pt-0 laptop:pb-0">
-            <h3 className="text-3xl font-bold pb-8">
-              The company&apos;s mission
-            </h3>
-            <p className="text-lg pb-7">
-              United4Digital is aimed to offer wide range solutions designed to
-              businesses to maximize the revenue potential by means of variety
-              of digital ads.
-            </p>
-            <p className="text-lg">
-              United4Digital is dedicated to empowering businesses with a wide
-              range of digital advertising solutions aimed at optimizing revenue
-              potential.
-            </p>
+      <div className="w-11/12">
+        <Container>
+          <SectionHeading text={"About us"} />
+        </Container>
+        <Container>
+          <div className="flex flex-col laptop:flex-row items-center laptop:justify-between">
+            <div className="text-primary max-w-[500px] pb-8 pt-28 laptop:pt-0 laptop:pb-0 laptop:mr-4">
+              <h3 className="text-3xl font-bold pb-8">
+                The company&apos;s mission
+              </h3>
+              <p className="text-lg pb-7">
+                United4Digital is aimed to offer wide range solutions designed
+                to businesses to maximize the revenue potential by means of
+                variety of digital ads.
+              </p>
+              <p className="text-lg">
+                United4Digital is dedicated to empowering businesses with a wide
+                range of digital advertising solutions aimed at optimizing
+                revenue potential.
+              </p>
+            </div>
+            <AboutUsLottie />
           </div>
-          <AboutUsLottie />
-        </div>
-      </Container>
-      <Container>
-        <div className="laptop:pt-20 pt-10 laptop:flex">
-          {_.map(offerList, ({ src, alt, text }: IOfferList, index: number) => {
-            return (
-              <OfferCard
-                key={alt}
-                src={src}
-                alt={alt}
-                text={text}
-                className={`${index && "mt-6 laptop:mt-0 laptop:ml-6"}`}
-              />
-            );
-          })}
-        </div>
-      </Container>
+        </Container>
+        <Container>
+          <div className="laptop:pt-20 pt-10 laptop:flex">
+            {_.map(
+              offerList,
+              ({ src, alt, text }: IOfferList, index: number) => {
+                return (
+                  <OfferCard
+                    key={alt}
+                    src={src}
+                    alt={alt}
+                    text={text}
+                    className={`${index && "mt-6 laptop:mt-0 laptop:ml-6"}`}
+                  />
+                );
+              }
+            )}
+          </div>
+        </Container>
+      </div>
     </SectionWrapper>
   );
 }

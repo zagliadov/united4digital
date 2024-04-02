@@ -8,7 +8,7 @@ interface IProps {
 
 export default function SectionWrapper({ id, children, className }: IProps) {
   return (
-    <section className={`h-full px-4 py-24 ${className}`} id={id}>
+    <section className={`h-full flex flex-col items-center py-24 ${className}`} id={id}>
       {children}
     </section>
   );

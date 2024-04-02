@@ -13,8 +13,8 @@ const defaultOptions = {
 };
 export default function AboutUsLottie() {
   return (
-    <div className="w-auto h-auto bg-white">
-      <Lottie options={defaultOptions} height={460} width={730} />
+    <div className="w-auto h-auto max-w-[730px] max-h-[460px] bg-white">
+      <Lottie options={defaultOptions} />
     </div>
   );
 }

@@ -38,83 +38,85 @@ const advertiserList: IOfferList[] = [
 export default function AdvertisersSection() {
   return (
     <SectionWrapper id="advertisers" className="bg-base-100">
-      <Container>
-        <SectionHeading text={"Advertisers"} />
-      </Container>
-      <Container>
-        <div className="flex flex-col justify-between pt-28 laptop:pt-0 items-center laptop:flex-row">
-          <div className="order-1 text-primary text-lg max-w-[500px] pb-8 laptop:pb-0">
-            <p>
-              No matter if you&apos;re a brand or an agency, rest assured that
-              we&apos;ll deliver the outcomes you seek!
-            </p>
-            <p className="pt-4">
-              United4Digital offers advertisers multiple avenues to access best
-              inventory, tailored to their desired level of control and target
-              CPM preferences.
-            </p>
-          </div>
-          <div className="order-2">
-            <Image
-              alt="demonstrates based on your desired level of control and target CPM preferences."
-              src="/advertisers-anim.gif"
-              width={894}
-              height={431}
-              className="w-auto h-auto"
-              unoptimized={true}
-              priority
-            />
-          </div>
-        </div>
-      </Container>
-      <Container>
-        <div className="laptop:pt-20 pt-10 laptop:flex">
-          {_.map(
-            advertiserList,
-            ({ src, alt, text }: IOfferList, index: number) => {
-              return (
-                <OfferCard
-                  key={alt}
-                  src={src}
-                  alt={alt}
-                  text={text}
-                  className={`${index && "mt-6 laptop:mt-0 laptop:ml-6"}`}
-                />
-              );
-            }
-          )}
-        </div>
-      </Container>
-      <Container>
-        <GeneralSchemeOfWork />
-      </Container>
-      <Container>
-        <div className="flex laptop:justify-between flex-col items-center laptop:flex-row-reverse pt-28">
-          <div className="order-1">
-            <Image
-              alt="Rectangle"
-              src="/rectangle.svg"
-              width={730}
-              height={463}
-              className="w-auto h-auto"
-            />
-          </div>
-
-          <div className="order-2 text-primary max-w-[500px] px-8 laptop:pt-0">
-            <p className="text-lg pt-9 laptop:pt-0">
-              Have an awesome ad ready to go? Let us find the perfect stage for
-              your creative masterpiece and bring it to life together. Get in
-              touch now!
-            </p>
-            <div className="pt-8">
-              <Button
-                label="Contact us"
-                className="laptop:px-14 w-full laptop:w-auto"
+      <div className="w-11/12">
+        <Container>
+          <SectionHeading text={"Advertisers"} />
+        </Container>
+        <Container>
+          <div className="flex flex-col justify-between pt-28 laptop:pt-0 items-center laptop:flex-row">
+            <div className="order-1 text-primary text-lg max-w-[500px] pb-8 laptop:pb-0 laptop:pr-4">
+              <p>
+                No matter if you&apos;re a brand or an agency, rest assured that
+                we&apos;ll deliver the outcomes you seek!
+              </p>
+              <p className="pt-4">
+                United4Digital offers advertisers multiple avenues to access
+                best inventory, tailored to their desired level of control and
+                target CPM preferences.
+              </p>
+            </div>
+            <div className="order-2">
+              <Image
+                alt="demonstrates based on your desired level of control and target CPM preferences."
+                src="/advertisers-anim.gif"
+                width={894}
+                height={431}
+                className="w-auto h-auto"
+                unoptimized={true}
+                priority
               />
             </div>
           </div>
-        </div>
-      </Container>
+        </Container>
+        <Container>
+          <div className="laptop:pt-20 pt-10 laptop:flex">
+            {_.map(
+              advertiserList,
+              ({ src, alt, text }: IOfferList, index: number) => {
+                return (
+                  <OfferCard
+                    key={alt}
+                    src={src}
+                    alt={alt}
+                    text={text}
+                    className={`${index && "mt-6 laptop:mt-0 laptop:ml-6"}`}
+                  />
+                );
+              }
+            )}
+          </div>
+        </Container>
+        <Container>
+          <GeneralSchemeOfWork />
+        </Container>
+        <Container>
+          <div className="flex laptop:justify-between flex-col items-center laptop:flex-row-reverse pt-28">
+            <div className="order-1">
+              <Image
+                alt="Rectangle"
+                src="/rectangle.svg"
+                width={730}
+                height={463}
+                className="w-auto h-auto"
+              />
+            </div>
+
+            <div className="order-2 text-primary max-w-[500px] px-8 laptop:pt-0">
+              <p className="text-lg pt-9 laptop:pt-0 laptop:pr-4">
+                Have an awesome ad ready to go? Let us find the perfect stage
+                for your creative masterpiece and bring it to life together. Get
+                in touch now!
+              </p>
+              <div className="pt-8">
+                <Button
+                  label="Contact us"
+                  className="laptop:px-14 w-full laptop:w-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </Container>
+      </div>
     </SectionWrapper>
   );
 }
