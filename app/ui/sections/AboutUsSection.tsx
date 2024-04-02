@@ -36,6 +36,7 @@ const offerList: IOfferList[] = [
   in traffic quality.`,
   },
 ];
+
 export default function AboutUsSection() {
   return (
     <SectionWrapper id="about-us" className="bg-base-100">

@@ -6,7 +6,10 @@ import Header from "@/app/ui/Header/Header";
 
 export const metadata: Metadata = {
   title: "Terms",
-  description: "Terms page",
+  robots: {
+    index: false,
+    follow: true
+  }
 };
 
 export default function TermsLayout({
