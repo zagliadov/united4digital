@@ -1,10 +1,10 @@
-import Image from "next/image";
 import * as _ from "lodash";
 import OfferCard from "@/app/ui/sections/components/OfferCard/OfferCard";
 import SectionHeading from "@/app/ui/sections/components/Heading/SectionHeading";
 import Container from "@/app/ui/Container/Container";
 import SectionWrapper from "@/app/ui/SectionWrapper/SectionWrapper";
 import { IOfferList } from "@/app/types/definitions";
+import AboutUsLottie from "@/app/ui/sections/components/LottieImage/AboutUsLottie";
 
 const offerList: IOfferList[] = [
   {
@@ -60,15 +60,7 @@ export default function AboutUsSection() {
               potential.
             </p>
           </div>
-          <div>
-            <Image
-              src="/rectangle.svg"
-              width={730}
-              height={460}
-              alt="rectangle image"
-              className="w-auto h-auto"
-            />
-          </div>
+          <AboutUsLottie />
         </div>
       </Container>
       <Container>
