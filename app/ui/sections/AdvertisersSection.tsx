@@ -7,6 +7,7 @@ import * as _ from "lodash";
 import OfferCard from "@/app/ui/sections/components/OfferCard/OfferCard";
 import { Button } from "@/app/ui/Button/Button";
 import GeneralSchemeOfWork from "./components/ModalImage/GeneralSchemeOfWork/GeneralSchemeOfWork";
+import AdvertLottie from "./components/LottieImage/AdvertLottie";
 
 const advertiserList: IOfferList[] = [
   {
@@ -56,15 +57,7 @@ export default function AdvertisersSection() {
               </p>
             </div>
             <div className="order-2">
-              <Image
-                alt="demonstrates based on your desired level of control and target CPM preferences."
-                src="/advertisers-anim.gif"
-                width={894}
-                height={431}
-                className="w-auto h-auto"
-                unoptimized={true}
-                priority
-              />
+              <AdvertLottie />
             </div>
           </div>
         </Container>

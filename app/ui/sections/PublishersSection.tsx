@@ -5,7 +5,7 @@ import Container from "@/app/ui/Container/Container";
 import SectionWrapper from "@/app/ui/SectionWrapper/SectionWrapper";
 import MonetizationGraph from "./components/ModalImage/MonetizationGraph/MonetizationGraph";
 import IntegrationProcessGraph from "./components/ModalImage/IntegrationProcessGraph/IntegrationProcessGraph";
-import ComprehensiveAdSupport from "./components/ModalImage/ComprehensiveAdSupport/ComprehensiveAdSupport";
+import PublishersLottie from "./components/LottieImage/PublishersLottie";
 
 export default function PublishersSection() {
   return (
@@ -58,7 +58,7 @@ export default function PublishersSection() {
 
           <div className="flex laptop:justify-between items-center flex-col laptop:flex-row-reverse pt-28">
             <div className="order-2 laptop:order-1">
-              <ComprehensiveAdSupport />
+              <PublishersLottie />
             </div>
 
             <div className="text-primary max-w-[500px] order-1 laptop:order-2 pb-8 laptop:pb-0 laptop:mr-4">
@@ -81,13 +81,7 @@ export default function PublishersSection() {
 
           <div className="flex laptop:justify-between items-center flex-col laptop:flex-row-reverse pt-28">
             <div className="order-1 laptop:order-2 max-w-[730px] max-h-[460px]">
-              <Image
-                alt="Rectangle"
-                src="/rectangle.svg"
-                width={730}
-                height={460}
-                className="w-auto h-auto"
-              />
+              <PublishersLottie />
             </div>
 
             <div className="order-2 laptop:order-1 text-primary max-w-[500px] px-8">

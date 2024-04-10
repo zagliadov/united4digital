@@ -1,8 +1,8 @@
 import SectionWrapper from "@/app/ui/SectionWrapper/SectionWrapper";
-import Image from "next/image";
 import Container from "@/app/ui/Container/Container";
 import SectionHeading from "@/app/ui/sections/components/Heading/SectionHeading";
 import Form from "@/app/ui/sections/components/Form/Form";
+import ContactUsLottie from "./components/LottieImage/ContactUsLottie";
 
 export default function ContactUsSection() {
   return (
@@ -15,13 +15,7 @@ export default function ContactUsSection() {
           <div className="flex flex-col items-center laptop:items-start pt-28 laptop:pt-0 laptop:flex-row justify-between">
             <Form />
             <div className="pt-4 laptop:pt-0 tablet:ml-4">
-              <Image
-                alt="Rectangle"
-                src="/rectangle.svg"
-                width={734}
-                height={572}
-                className="w-auto h-auto"
-              />
+              <ContactUsLottie />
             </div>
           </div>
         </Container>

@@ -16,9 +16,9 @@ export default function CookiesConsent() {
     setCookie("localConsent", "true", {});
   };
   const declineCookie = () => {
-    setShowConsent(true)
+    setShowConsent(true);
     setCookie("localConsent", "false", {});
-  }
+  };
 
   if (showConsent) {
     return null;
@@ -34,16 +34,18 @@ export default function CookiesConsent() {
             Privacy Policy.
           </Link>
         </span>
-        <Button
-          label={"Decline"}
-          onClick={declineCookie}
-          className="text-white leading-4 font-bold mr-4 bg-base-300"
-        />
-        <Button
-          label={"Accept"}
-          onClick={acceptCookie}
-          className="btn btn-secondary text-white leading-4 font-bold"
-        />
+        <div className="flex flex-col tablet:flex-row px-0">
+          <Button
+            label={"Decline"}
+            onClick={declineCookie}
+            className="text-white leading-4 font-bold tablet:mr-4 mb-4 laptop:mb-0 bg-base-300 min-w-[110px]"
+          />
+          <Button
+            label={"Accept"}
+            onClick={acceptCookie}
+            className="btn btn-secondary text-white leading-4 font-bold min-w-[110px]"
+          />
+        </div>
       </div>
     </div>
   );
