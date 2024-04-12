@@ -2,14 +2,11 @@
 
 import { FC } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useRouter } from 'next/navigation'
 import * as _ from "lodash";
 import { Button } from "@/app/ui/Button/Button";
 import { links } from "@/app/lib/links";
 
 export const NavLinks: FC = () => {
-  const router = useRouter();
   const arrow = (
     <svg
       width="17"
@@ -27,13 +24,12 @@ export const NavLinks: FC = () => {
     </svg>
   );
   return (
-    <div className="hidden laptop:flex">
-      <ul className="navbar-end text-base-100 w-full hidden laptop:flex">
+    <div className="hidden laptop:flex max-w-[796px]">
+      <ul className="navbar-end text-base-100 w-full hidden laptop:flex laptop:justify-start">
         {_.map(links, (link) => {
           return (
-            <Link key={link.name} href={`/#${link.href}`} className="flex items-center justify-center w-[130px]">
-              {/* mr-4 */}
-              <li className=" h-full flex items-center hover:text-white hover:font-bold text-base">{link.name}</li>
+            <Link key={link.name} href={`${link.href}`} className="flex items-center justify-center">
+              <li className="h-full flex items-center mr-[44px] hover:text-white hover:font-bold text-base max-w-[123px]">{link.name}</li>
             </Link>
           );
         })}
