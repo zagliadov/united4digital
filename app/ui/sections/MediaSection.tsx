@@ -4,6 +4,7 @@ import Container from "@/app/ui/Container/Container";
 import SectionHeading from "@/app/ui/sections/components/Heading/SectionHeading";
 import InfoCard from "@/app/ui/sections/components/InfoCard/InfoCard";
 import { Button } from "@/app/ui/Button/Button";
+import SocialMediaLottie from "./components/LottieImage/SocialMedia";
 
 export default function MediaSection() {
   return (
@@ -62,18 +63,12 @@ export default function MediaSection() {
               className={"max-w-[744px] mt-14 laptop:mt-0 laptop:ml-14"}
             />
           </div>
-          <div className="flex laptop:justify-between items-center flex-col laptop:flex-row-reverse pt-28">
+          <div className="flex laptop:justify-end items-center flex-col laptop:flex-row-reverse pt-28">
             <div className="order-1 laptop:order-2">
-              <Image
-                alt="Rectangle"
-                src="/rectangle.svg"
-                width={730}
-                height={460}
-                className="w-auto h-auto"
-              />
+              <SocialMediaLottie />
             </div>
 
-            <div className="order-2 laptop:order-1 text-primary max-w-[500px] px-8">
+            <div className="order-2 laptop:order-1 text-primary max-w-[500px] laptop:ml-[198px] px-8 laptop:px-0">
               <p className="text-lg pt-9 laptop:pt-0">
                 Ready to elevate your online presence and drive targeted user
                 acquisition? Let&apos;s craft tailored strategies to amplify

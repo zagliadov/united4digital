@@ -1,11 +1,11 @@
-import Image from "next/image";
 import SectionHeading from "@/app/ui/sections/components/Heading/SectionHeading";
 import { Button } from "@/app/ui/Button/Button";
+import Image from "next/image";
 import Container from "@/app/ui/Container/Container";
 import SectionWrapper from "@/app/ui/SectionWrapper/SectionWrapper";
-import MonetizationGraph from "./components/ModalImage/MonetizationGraph/MonetizationGraph";
-import IntegrationProcessGraph from "./components/ModalImage/IntegrationProcessGraph/IntegrationProcessGraph";
-import PublishersLottie from "./components/LottieImage/PublishersLottie";
+import MonetizationGraph from "@/app/ui/sections/components/ModalImage/MonetizationGraph/MonetizationGraph";
+import IntegrationProcessGraph from "@/app/ui/sections/components/ModalImage/IntegrationProcessGraph/IntegrationProcessGraph";
+import PublishersLottie from "@/app/ui/sections/components/LottieImage/PublishersLottie";
 
 export default function PublishersSection() {
   return (
@@ -21,11 +21,11 @@ export default function PublishersSection() {
               <MonetizationGraph />
             </div>
 
-            <div className="text-primary max-w-[500px] pt-28 laptop:pt-0 order-1 laptop:order-2 pb-8 laptop:pb-0 laptop:mr-4">
+            <div className="text-primary max-w-[500px] pt-28 laptop:pt-0 order-1 laptop:order-2 pb-8 laptop:pb-0 laptop:mr-[50px]">
               <h3 className="text-3xl font-bold">
                 What is the process of ad monetization?
               </h3>
-              <p className="text-lg pt-8">
+              <p className="text-lg pt-8 text-justify">
                 Ad monetization generally operates by displaying various types
                 of advertisements on a website, application CTV/OTT or audio
                 channel and receiving commission or fee, whenever the ad garners
@@ -43,7 +43,7 @@ export default function PublishersSection() {
               <h3 className="text-3xl font-bold">
                 Integration Process Overview
               </h3>
-              <ul className="pt-8 list-decimal text-lg list-inside">
+              <ul className="pt-8 list-decimal text-lg list-inside text-justify">
                 <li>Incorporate several lines of ads.txt onto your website.</li>
                 <li>
                   Provide us with the specifications for your ad placements.
@@ -58,14 +58,15 @@ export default function PublishersSection() {
 
           <div className="flex laptop:justify-between items-center flex-col laptop:flex-row-reverse pt-28">
             <div className="order-2 laptop:order-1">
-              <PublishersLottie />
+              {/* <PublishersLottie /> */}
+              <Image width={0} height={0} src="/comprehensive.gif" alt="Comprehensive image" className="w-auto h-auto"/>
             </div>
 
             <div className="text-primary max-w-[500px] order-1 laptop:order-2 pb-8 laptop:pb-0 laptop:mr-4">
               <h3 className="text-3xl font-bold pb-8">
                 Comprehensive AD SUPPORT
               </h3>
-              <p className="text-lg pb-7">
+              <p className="text-lg pb-7 text-justify">
                 We facilitate all ad formats and accessible channels,
                 encompassing display, native, audio, video, and connected TVs.
                 Through our bidding technology, we aggregate demand across
@@ -79,12 +80,12 @@ export default function PublishersSection() {
             </div>
           </div>
 
-          <div className="flex laptop:justify-between items-center flex-col laptop:flex-row-reverse pt-28">
+          <div className="flex laptop:justify-end items-center flex-col laptop:flex-row-reverse pt-28">
             <div className="order-1 laptop:order-2 max-w-[730px] max-h-[460px]">
               <PublishersLottie />
             </div>
 
-            <div className="order-2 laptop:order-1 text-primary max-w-[500px] px-8">
+            <div className="order-2 laptop:order-1 text-primary max-w-[500px] laptop:ml-[137px] px-8">
               <p className="text-lg pt-9 laptop:pt-0">
                 Ready to monetize your website or platform with lucrative ad
                 space? Let&apos;s maximize your revenue potential together.

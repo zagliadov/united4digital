@@ -49,7 +49,7 @@ export const DropdownMenu: FC = () => {
         <ul className="flex flex-col py-4 px-14 border-t-4 border-t-primary w-4/5 rounded-b-md bg-base-100">
           {_.map(links, (link) => {
             return (
-              <Link key={link.name} href={`/#${link.href}`}>
+              <Link key={link.name} href={`${link.href}`}>
                 <li className="py-4 text-center text-2xl leading-6">{link.name}</li>
               </Link>
             );

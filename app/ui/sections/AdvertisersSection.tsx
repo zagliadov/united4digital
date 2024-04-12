@@ -45,7 +45,7 @@ export default function AdvertisersSection() {
         </Container>
         <Container>
           <div className="flex flex-col justify-between pt-28 laptop:pt-0 items-center laptop:flex-row">
-            <div className="order-1 text-primary text-lg max-w-[500px] pb-8 laptop:pb-0 laptop:pr-4">
+            <div className="order-1 text-justify text-primary text-lg max-w-[500px] pb-8 laptop:pb-0 laptop:pr-4">
               <p>
                 No matter if you&apos;re a brand or an agency, rest assured that
                 we&apos;ll deliver the outcomes you seek!
@@ -57,7 +57,13 @@ export default function AdvertisersSection() {
               </p>
             </div>
             <div className="order-2">
-              <AdvertLottie />
+              <Image
+                src="/advertisers.gif"
+                width={0}
+                height={0}
+                alt="Not found page image"
+                className="w-auto h-auto"
+              />
             </div>
           </div>
         </Container>
@@ -85,17 +91,11 @@ export default function AdvertisersSection() {
         <Container>
           <div className="flex laptop:justify-between flex-col items-center laptop:flex-row-reverse pt-28">
             <div className="order-1">
-              <Image
-                alt="Rectangle"
-                src="/rectangle.svg"
-                width={730}
-                height={463}
-                className="w-auto h-auto"
-              />
+              <AdvertLottie />
             </div>
 
-            <div className="order-2 text-primary max-w-[500px] px-8 laptop:pt-0">
-              <p className="text-lg pt-9 laptop:pt-0 laptop:pr-4">
+            <div className="order-2 text-primary max-w-[500px] laptop:pt-0">
+              <p className="text-lg pt-9 laptop:pt-0">
                 Have an awesome ad ready to go? Let us find the perfect stage
                 for your creative masterpiece and bring it to life together. Get
                 in touch now!

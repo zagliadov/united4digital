@@ -1,7 +1,7 @@
 "use client";
 
 import Lottie from "react-lottie";
-import animationData from "@/public/about-us.json";
+import animationData from "@/public/social-media.json";
 
 const defaultOptions = {
   loop: true,
@@ -11,9 +11,9 @@ const defaultOptions = {
     preserveAspectRatio: "xMidYMid slice",
   },
 };
-export default function AboutUsLottie() {
+export default function SocialMediaLottie() {
   return (
-    <div className="w-auto h-auto max-w-[730px] max-h-[460px]">
+    <div className="w-auto h-auto max-w-[737px] max-h-[460px]">
       <Lottie options={defaultOptions} />
     </div>
   );

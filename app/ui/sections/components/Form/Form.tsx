@@ -55,7 +55,7 @@ export default function Form() {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="laptop:flex laptop:justify-between">
           {/* *** First Name *** */}
-          <label className="form-control w-full laptop:max-w-[300px] tablet:mr-4">
+          <label className="form-control w-full laptop:min-w-[300px] tablet:mr-4">
             <div className="label">
               <span className="font-medium">
                 First Name<span className="text-error">*</span>
@@ -63,7 +63,7 @@ export default function Form() {
             </div>
             <input
               type="text"
-              className={`input input-bordered rounded-md w-full ${
+              className={`input rounded-md w-full ${
                 errors.firstName && "input-error animate-pulse"
               }`}
               {...register(CFormKeys.FIRST_NAME, {
@@ -73,7 +73,7 @@ export default function Form() {
             />
           </label>
           {/* *** Last Name *** */}
-          <label className="form-control w-full laptop:max-w-[300px]">
+          <label className="form-control w-full laptop:min-w-[300px]">
             <div className="label">
               <span className="font-medium">
                 Last Name<span className="text-error">*</span>
@@ -81,7 +81,7 @@ export default function Form() {
             </div>
             <input
               type="text"
-              className={`input input-bordered rounded-md w-full ${
+              className={`input rounded-md w-full ${
                 errors.lastName && "input-error animate-pulse"
               }`}
               {...register(CFormKeys.LAST_NAME, {
@@ -94,7 +94,7 @@ export default function Form() {
 
         <div className="laptop:flex laptop:justify-between">
           {/* *** Email *** */}
-          <label className="form-control w-full laptop:max-w-[300px] tablet:mr-4">
+          <label className="form-control w-full laptop:min-w-[300px] tablet:mr-4">
             <div className="label">
               <span className="font-medium">
                 Email<span className="text-error">*</span>
@@ -102,7 +102,7 @@ export default function Form() {
             </div>
             <input
               type="text"
-              className={`input input-bordered rounded-md w-full ${
+              className={`input rounded-md w-full ${
                 errors.email && "input-error animate-pulse"
               }`}
               {...register(CFormKeys.EMAIL, { required: true })}
@@ -110,7 +110,7 @@ export default function Form() {
             />
           </label>
           {/* *** Phone Number *** */}
-          <label className="form-control w-full laptop:max-w-[300px] relative">
+          <label className="form-control w-full laptop:min-w-[300px] relative">
             <div className="label">
               <span className="font-medium">Phone Number</span>
             </div>
@@ -122,7 +122,7 @@ export default function Form() {
               control={control}
               rules={{ required: true }}
               withCountryCallingCode={true}
-              className="input input-bordered rounded-md w-full"
+              className="input rounded-md w-full"
             />
           </label>
         </div>
@@ -133,7 +133,7 @@ export default function Form() {
           </div>
           <input
             type="text"
-            className="input input-bordered rounded-md w-full"
+            className="input rounded-md w-full"
             {...register(CFormKeys.COMPANY, { required: false })}
           />
         </label>
@@ -144,7 +144,7 @@ export default function Form() {
           </div>
           <input
             type="text"
-            className="input input-bordered rounded-md w-full"
+            className="input rounded-md w-full"
             {...register(CFormKeys.SUBJECT, { required: false })}
           />
         </label>
@@ -154,7 +154,7 @@ export default function Form() {
             <span className="font-medium">Message</span>
           </div>
           <textarea
-            className="textarea textarea-bordered rounded-md h-24"
+            className="textarea rounded-md h-24"
             {...register(CFormKeys.MESSAGE, { required: false })}
           ></textarea>
         </label>
