@@ -51,7 +51,7 @@ export default function Form() {
   };
 
   return (
-    <div className="relative w-full bg-white rounded-md p-4 laptop:p-12 max-w-[792px]">
+    <div className="relative w-full bg-white rounded-md p-4 laptop:p-12 max-w-[792px] order-2 widescreen:order-1">
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="laptop:flex laptop:justify-between">
           {/* *** First Name *** */}
@@ -165,7 +165,7 @@ export default function Form() {
           render={({ field: { onChange, value }, fieldState: { error } }) => (
             <ReCAPTCHA
               ref={recaptchaRef}
-              sitekey={process.env.NEXT_PUBLIC_SITE_KEY || ""}
+              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}
               onChange={onChange}
               className="pt-8"
             />

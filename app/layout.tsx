@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import { openSans } from "@/app/ui/fonts";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
-
-import CookiesConsent from "./ui/CookieConsent/CookieConsent";
+// import Script from "next/script";
 
 export const metadata: Metadata = {
   title: {
@@ -25,14 +22,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="GTM-TTC44B3J" />
-      <GoogleAnalytics gaId="G-M0HCH2F1PG" />
-      <Analytics/>
-      <SpeedInsights/>
+      {/* <Script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="bf1218b1-b997-4221-94b8-3147efd1b6f5" data-blockingmode="auto" /> */}
+      {/* <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="bf1218b1-b997-4221-94b8-3147efd1b6f5" data-blockingmode="auto" type="text/javascript"></script> */}
+      {/* <GoogleTagManager gtmId="G-FPHQXNL5SQ" /> */}
+      {/* <GoogleAnalytics gaId="G-FPHQXNL5SQ" /> */}
       <body
         className={`${openSans.variable} flex flex-col min-h-screen antialiased`}
       >
-        <CookiesConsent />
         {children}
       </body>
     </html>

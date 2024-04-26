@@ -4,6 +4,7 @@ import Lottie from "react-lottie";
 import { useState, useEffect } from "react";
 import animationData from "@/public/logoU4D.json";
 
+
 const defaultOptions = {
   loop: true,
   autoplay: true,
@@ -12,7 +13,6 @@ const defaultOptions = {
     preserveAspectRatio: "xMidYMid slice",
   },
 };
-console.log(defaultOptions, 'defaultOptions')
 export default function LogoLottie() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
