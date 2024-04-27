@@ -159,13 +159,13 @@ export default function Form() {
           ></textarea>
         </label>
 
-        <Controller
+        {/* <Controller
           name={CFormKeys.RECAPTCHA}
           control={control}
           render={({ field: { onChange, value }, fieldState: { error } }) => (
             <ReCAPTCHA
               ref={recaptchaRef}
-              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}
+              sitekey={""}
               onChange={onChange}
               className="pt-8"
             />
@@ -173,7 +173,7 @@ export default function Form() {
         />
         {errors.recaptcha && (
           <p className="absolute text-error">{errors.recaptcha.message}</p>
-        )}
+        )} */}
 
         <div className="flex justify-between pt-8">
           <Button label={"Submit"} type={"submit"} className="w-[170px] btn-secondary" />

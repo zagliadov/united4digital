@@ -4,7 +4,10 @@ import SectionHeading from "@/app/ui/sections/components/Heading/SectionHeading"
 import Container from "@/app/ui/Container/Container";
 import SectionWrapper from "@/app/ui/SectionWrapper/SectionWrapper";
 import { IOfferList } from "@/app/types/definitions";
-import AboutUsLottie from "@/app/ui/sections/components/LottieImage/AboutUsLottie";
+import React, { Suspense } from "react";
+// import AboutUsLottie from "@/app/ui/sections/components/LottieImage/AboutUsLottie";
+const AboutUsLottie = React.lazy(() => import('@/app/ui/sections/components/LottieImage/AboutUsLottie'));
+
 
 const offerList: IOfferList[] = [
   {
@@ -61,7 +64,10 @@ export default function AboutUsSection() {
                 revenue potential.
               </p>
             </div>
-            <AboutUsLottie />
+            {/* <AboutUsLottie /> */}
+            <Suspense fallback={<div>Loading...</div>}>
+              <AboutUsLottie />
+            </Suspense>
           </div>
         </Container>
         <Container>
