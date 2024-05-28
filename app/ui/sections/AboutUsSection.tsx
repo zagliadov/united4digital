@@ -3,11 +3,8 @@ import OfferCard from "@/app/ui/sections/components/OfferCard/OfferCard";
 import SectionHeading from "@/app/ui/sections/components/Heading/SectionHeading";
 import Container from "@/app/ui/Container/Container";
 import SectionWrapper from "@/app/ui/SectionWrapper/SectionWrapper";
+import AboutUsLottie from "@/app/ui/sections/components/LottieImage/AboutUsLottie";
 import { IOfferList } from "@/app/types/definitions";
-import React, { Suspense } from "react";
-// import AboutUsLottie from "@/app/ui/sections/components/LottieImage/AboutUsLottie";
-const AboutUsLottie = React.lazy(() => import('@/app/ui/sections/components/LottieImage/AboutUsLottie'));
-
 
 const offerList: IOfferList[] = [
   {
@@ -64,15 +61,12 @@ export default function AboutUsSection() {
                 revenue potential.
               </p>
             </div>
-            {/* <AboutUsLottie /> */}
-            <Suspense fallback={<div>Loading...</div>}>
-              <AboutUsLottie />
-            </Suspense>
+            <AboutUsLottie />
           </div>
         </Container>
         <Container>
-          <div className="laptop:pt-20 pt-10 laptop:flex">
-            {_.map(
+          <div className="laptop:pt-20 pt-10 laptop:flex translate-z-0">
+          {_.map(
               offerList,
               ({ src, alt, text }: IOfferList, index: number) => {
                 return (
@@ -81,7 +75,7 @@ export default function AboutUsSection() {
                     src={src}
                     alt={alt}
                     text={text}
-                    className={`${index && "mt-6 laptop:mt-0 laptop:ml-6"}`}
+                    className={`${index && "mt-6 laptop:mt-0 laptop:ml-6 translate-z-0"}`}
                   />
                 );
               }

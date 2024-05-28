@@ -16,9 +16,11 @@ export const schema = yup
       .email("Must be a valid email")
       .required("Email is required"),
     [CFormKeys.PHONE_NUMBER]: yup.string(),
-    [CFormKeys.COMPANY]: yup.string(),
-    [CFormKeys.SUBJECT]: yup.string(),
-    [CFormKeys.MESSAGE]: yup.string(),
-    [CFormKeys.RECAPTCHA]: yup.string().required("You must confirm that you are not a robot")
+    [CFormKeys.COMPANY]: yup.string().max(80, ""),
+    [CFormKeys.SUBJECT]: yup.string().max(80, ""),
+    [CFormKeys.MESSAGE]: yup.string().max(500, ""),
+    [CFormKeys.RECAPTCHA]: yup
+      .string()
+      .required("You must confirm that you are not a robot"),
   })
   .required();

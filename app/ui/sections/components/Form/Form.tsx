@@ -112,18 +112,30 @@ export default function Form() {
           {/* *** Phone Number *** */}
           <label className="form-control w-full laptop:min-w-[300px] relative">
             <div className="label">
-              <span className="font-medium">Phone Number</span>
+              <span className="font-medium">Phone Number <span className="text-xs">(optional)</span></span>
             </div>
-            <PhoneInputWithCountry
-              name={CFormKeys.PHONE_NUMBER}
-              defaultCountry="GB"
-              international
-              countryCallingCodeEditable={false}
+            <Controller
               control={control}
-              rules={{ required: true }}
-              withCountryCallingCode={true}
-              className="input rounded-md w-full"
+              name={CFormKeys.PHONE_NUMBER}
+              rules={{ required: false }}
+              render={({ field }) => (
+                <PhoneInputWithCountry
+                  name={CFormKeys.PHONE_NUMBER}
+                  defaultCountry="GB"
+                  international
+                  countryCallingCodeEditable={false}
+                  control={control}
+                  rules={{ required: false }}
+                  withCountryCallingCode={true}
+                  className="input rounded-md w-full"
+                />
+              )}
             />
+            {/* {errors.phoneNumber && (
+              <p className="absolute text-error -top-2 border border-red-500">
+                {errors.phoneNumber.message}
+              </p>
+            )} */}
           </label>
         </div>
         {/* *** Company *** */}
@@ -159,13 +171,14 @@ export default function Form() {
           ></textarea>
         </label>
 
-        {/* <Controller
+        <Controller
           name={CFormKeys.RECAPTCHA}
           control={control}
+          rules={{ required: false }}
           render={({ field: { onChange, value }, fieldState: { error } }) => (
             <ReCAPTCHA
               ref={recaptchaRef}
-              sitekey={""}
+              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}
               onChange={onChange}
               className="pt-8"
             />
@@ -173,10 +186,14 @@ export default function Form() {
         />
         {errors.recaptcha && (
           <p className="absolute text-error">{errors.recaptcha.message}</p>
-        )} */}
+        )}
 
         <div className="flex justify-between pt-8">
-          <Button label={"Submit"} type={"submit"} className="w-[170px] btn-secondary" />
+          <Button
+            label={"Submit"}
+            type={"submit"}
+            className="w-[170px] btn-secondary"
+          />
           <div className="flex items-center">
             <LinkedIn
               fill={"var(--color-primary)"}

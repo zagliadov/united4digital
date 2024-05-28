@@ -2,9 +2,15 @@ import type { Metadata } from "next";
 import { openSans } from "@/app/ui/fonts";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
-// import Script from "next/script";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.BASE_URL || ""),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-US",
+    },
+  },
   title: {
     default: "United4Digital",
     template: "%s - United 4 Digital",
@@ -22,10 +28,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* <Script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="bf1218b1-b997-4221-94b8-3147efd1b6f5" data-blockingmode="auto" /> */}
-      {/* <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="bf1218b1-b997-4221-94b8-3147efd1b6f5" data-blockingmode="auto" type="text/javascript"></script> */}
-      {/* <GoogleTagManager gtmId="G-FPHQXNL5SQ" /> */}
-      {/* <GoogleAnalytics gaId="G-FPHQXNL5SQ" /> */}
+      <head>
+        <script
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid="bf1218b1-b997-4221-94b8-3147efd1b6f5"
+          data-blockingmode="auto"
+          type="text/javascript"
+        ></script>
+      </head>
+      {/* <GoogleTagManager gtmId="G-FPHQXNL5SQ" />
+      <GoogleAnalytics gaId="G-FPHQXNL5SQ" /> */}
       <body
         className={`${openSans.variable} flex flex-col min-h-screen antialiased`}
       >

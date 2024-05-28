@@ -35,10 +35,8 @@ const config: Config = {
       screens: {
         tablet: "640px",
         // => @media (min-width: 640px) { ... }
-
         laptop: "1024px",
         // => @media (min-width: 1024px) { ... }
-
         desktop: "1280px",
         // => @media (min-width: 1280px) { ... }
         widescreen: '1444px',
@@ -46,11 +44,6 @@ const config: Config = {
       },
       borderRadius: {
         custom: "2.78px",
-      },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
   },

@@ -7,7 +7,6 @@ import AdvertisersSection from "@/app/ui/sections/AdvertisersSection";
 import ContactUsSection from "@/app/ui/sections/ContactUsSection";
 import MediaSection from "@/app/ui/sections/MediaSection";
 
-
 export default function Home() {
   return (
     <>

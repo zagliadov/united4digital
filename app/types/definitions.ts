@@ -44,3 +44,23 @@ export interface IOfferList {
   [CommonFields.ALT]: string;
   [CommonFields.TEXT]: string;
 }
+
+export enum GlossaryFields {
+  SLUG = "slug",
+  TITLE = "title",
+  COVER_IMAGE = "coverImage",
+  OG_IMAGE_URL = "url",
+  CONTENT = "content",
+  PREVIEW = "preview",
+}
+
+export type Glossary = {
+  [GlossaryFields.SLUG]: string;
+  [GlossaryFields.TITLE]: string;
+  [GlossaryFields.COVER_IMAGE]: string;
+  ogImage: {
+    [GlossaryFields.OG_IMAGE_URL]: string;
+  };
+  [GlossaryFields.CONTENT]: string;
+  [GlossaryFields.PREVIEW]?: boolean;
+};
